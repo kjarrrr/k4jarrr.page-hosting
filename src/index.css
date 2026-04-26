@@ -1,0 +1,494 @@
+@import "tailwindcss";
+
+body {
+  background-color: rgb(60, 77, 87);
+  zoom: 70%;
+  background-image: url("/img/robloxsky.png");
+  background-repeat: repeat;
+  background-position: 0 0;
+  animation: diagonal-move 50s linear infinite;
+}
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+
+@keyframes diagonal-move {
+  0%   { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+@keyframes scaler {
+  from { transform: scale(0.2); }
+  to   { transform: scale(1); }
+}
+
+.songbox {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  position: fixed;
+  margin-left: 80px;
+  margin-top: 80px;
+  font-family: 'Trebuchet MS';
+  color: white;
+}
+
+.playing{
+   position: relative;
+  top: -40px;
+}
+
+
+.by1, .by2, .by3 {
+  position: relative;
+  top: -40px;
+  color: rgb(211, 211, 211);
+}
+
+.mimimiContainer {
+  position: fixed;
+  top: 20px;
+  width: 40px;
+  height: 60px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.mimimi, .mimimi2 {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.mimimi2 { display: none; }
+.mimimiContainer:hover .mimimi2 { display: block; }
+
+.gigaContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: -150px;
+}
+
+.main {
+  display: flex;
+  justify-items: center;
+  margin-top: 250px;
+}
+
+.square {
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  flex-direction: column;
+  width: 1200px;
+  height: 80rem;
+  background-color: rgb(25, 37, 44);
+  position: relative;
+  border: solid rgb(16, 21, 23);
+  top: -50px;
+  right: -200px;
+  margin: 0;
+  font-family: 'Trebuchet MS';
+  font-size: 25px;
+  color: white;
+}
+
+
+
+
+.link {
+  width: 40px;
+  height: 16px;
+  position: relative;
+  right: -10px;
+  bottom: -15px;
+}
+
+.square3 {
+  width: 350px;
+  height: 250px;
+  background-color: rgb(216, 195, 195);
+  margin-top: 10px;
+  position: relative;
+  right: -250px;
+  bottom: -189px;
+  border: solid;
+  border-color: rgb(0, 45, 56);
+  border-image: linear-gradient(to bottom, rgb(0, 45, 56), rgb(0, 8, 10)) 1;
+  border-top-width: 40px;
+  box-shadow: 20px 20px black;
+}
+
+.square7 {
+  width: 355px;
+  height: 40px;
+  background: linear-gradient(to top, rgb(39, 70, 77) 10%, rgb(0, 45, 56) 80%, rgba(247, 249, 255, 0.245));
+  position: relative;
+  right: 2px;
+  bottom: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: solid;
+  border-color: rgb(0, 45, 56);
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+}
+
+.button1 {
+  width: 110px;
+  height: 30px;
+  background-color: rgb(181, 167, 167);
+  border-left: none;
+  border-top: none;
+  position: relative;
+  bottom: 0px;
+  left: 120px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.button1:hover {
+  border: solid;
+  border-width: 1px;
+  border-bottom: none;
+  border-right: none;
+  transform: scale(1.1);
+}
+
+.work {
+  width: 90px;
+  height: 28px;
+  position: relative;
+  bottom: -9px;
+  right: -8px;
+}
+
+.square8 {
+  width: 350px;
+  height: 250px;
+  background-color: rgb(216, 195, 195);
+  margin-top: 10px;
+  position: relative;
+  right: 105px;
+  bottom: -600px;
+  border: solid;
+  border-color: rgb(0, 45, 56);
+  border-image: linear-gradient(to bottom, rgb(0, 45, 56), rgb(0, 8, 10)) 1;
+  border-top-width: 40px;
+  box-shadow: 20px 20px black;
+}
+
+.square10 {
+  width: 355px;
+  height: 40px;
+  background: linear-gradient(to top, rgb(39, 70, 77) 10%, rgb(0, 45, 56) 80%, rgba(247, 249, 255, 0.245));
+  position: relative;
+  top: -40px;
+  right: 2px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: solid;
+  border-color: rgb(0, 45, 56);
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+}
+
+.button2 {
+  width: 110px;
+  height: 30px;
+  background-color: rgb(181, 167, 167);
+  border-left: none;
+  border-top: none;
+  position: relative;
+  left: 120px;
+  bottom: 100px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.button2:hover {
+  border: solid;
+  border-width: 1px;
+  border-bottom: none;
+  border-right: none;
+  transform: scale(1.1);
+}
+
+
+.buttoncancelContainer {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  cursor: pointer;
+}
+
+.closerContainer {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.closer, .closer2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.closer2 { display: none; }
+.closerContainer:hover .closer2 { display: block; }
+
+.blueheaderContainer {
+  position: relative;
+  top: -65px;
+  right: 0;
+  z-index: -1;
+}
+
+.square12 {
+  width: 730px;
+  height: 100px;
+  background-color: rgb(0, 84, 106);
+  border: solid;
+  border-color: rgb(0, 53, 88);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.textlinks {
+  position: relative;
+  top: 30px;
+  margin-left: 30px;
+  font-size: 35px;
+  color: white;
+  font-family: 'Trebuchet MS';
+  letter-spacing: 10px;
+}
+
+dialog { padding: 0; }
+
+dialog .allpoppie {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  
+}
+
+.tree {
+  position: fixed;
+  top: 30vh;
+  left: 100vh;
+  width: 730px;
+  height: 450px;
+  background-color: rgb(149, 133, 133);
+  border: solid;
+  border-top: none;
+  border-left: none;
+  border-color: black;
+  animation: scaler 0.1s ease-in-out;
+}
+
+.linked {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  right: -125px;
+  bottom: 0;
+}
+
+.gallery {
+  width: 220px;
+  height: 220px;
+  position: relative;
+  right: -58px;
+  bottom: 70px;
+}
+
+.iconsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  margin-left: 75px;
+  width: 80vh;
+  bottom: 0px;
+  gap: 50px;
+}
+
+.worksContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 75px;
+  width: 80vh;
+  bottom: 0px;
+  gap: 50px;
+}
+
+.internalContainer    { width: 150px;  height: 100px; transition: transform ease 0.2s; color: black; }
+
+.internalContainer:hover { transform: scale(1.1); }
+
+.internalIntention { width: 150px;  height: 180px; border: solid;}
+
+.internal-p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Trebuchet MS';
+  letter-spacing: 2px;
+}
+
+.internal-p { position: relative; left: 7px; }
+
+.tumblrContainer    { width: 60px;  height: 90px; transition: transform ease 0.2s; color: black; }
+.twitterContainer   { width: 110px; height: 90px; transition: transform ease 0.2s; color: black; }
+.newgroundsContainer{ width: 110px; height: 90px; transition: transform ease 0.2s; color: black; }
+.kofiContainer      { width: 110px; height: 90px; transition: transform ease 0.2s; color: black; }
+.youtubeContainer   { width: 110px; height: 90px; transition: transform ease 0.2s; color: black; }
+.deviantContainer   { width: 110px; height: 90px; display: flex; flex-direction: column; 
+                      justify-content: center; align-items: center; transition: transform ease 0.2s; color: black; }
+
+.tumblrContainer:hover     { transform: scale(1.1); }
+.twitterContainer:hover    { transform: scale(1.1); }
+.newgroundsContainer:hover { transform: scale(1.1); }
+.kofiContainer:hover       { transform: scale(1.1); }
+.youtubeContainer:hover    { transform: scale(1.1); }
+.deviantContainer:hover    { transform: scale(1.1); }
+
+.tumblr    { width: 60px;  height: 90px; }
+.twitter   { width: 110px; height: 90px; }
+.newgrounds{ width: 100px; height: 90px; }
+.kofi      { width: 100px; height: 90px; }
+.youtube   { width: 105px; height: 80px; }
+.deviantart { width: 82px; height: 80px; margin-top: 13px;  }
+
+.tumblr-p, .twitter-p, .newgrounds-p, .kofi-p, .youtube-p, .deviant-p {
+  display: flex;
+  justify-content: center;
+  font-family: 'Trebuchet MS';
+  letter-spacing: 2px;
+}
+
+.tumblr-p     { position: relative; left: 7px; }
+.newgrounds-p { position: relative; left: -5px; }
+.kofi-p       { position: relative; right: 10px; }
+
+
+dialog .allpoppie2 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.tripper {
+  position: fixed;
+  top: 30vh;
+  left: 100vh;
+  width: 730px;
+  height: 450px;
+  background-color: rgb(149, 133, 133);
+  border: solid;
+  border-top: none;
+  border-left: none;
+  border-color: black;
+  animation: scaler 0.1s ease-in-out;
+}
+
+.buttoncancelContainer2 {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.closerContainer2 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.closer3, .closer4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.closer4 { display: none; }
+.closerContainer2:hover .closer4 { display: block; }
+
+.textWork {
+  position: relative;
+  top: 30px;
+  margin-left: 30px;
+  font-size: 35px;
+  color: white;
+  font-family: 'Trebuchet MS';
+  letter-spacing: 10px;
+}
+
+.blueheaderContainer2 {
+  position: relative;
+  top: -65px;
+  right: 0;
+  z-index: -1;
+}
+
+.square13 {
+  width: 730px;
+  height: 100px;
+  background-color: rgb(0, 84, 106);
+  border: solid;
+  border-color: rgb(0, 53, 88);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.squarefied{
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  width: 1200px;
+  height: 50rem;
+  border: solid rgb(16, 21, 23);
+  background-color: rgb(25, 37, 44);
+  position: relative;
+  top: 50px;
+  right: -65vh;
+  margin: 0;
+  font-family: 'Trebuchet MS';
+  font-size: 25px;
+  color: white;
+}
+
+.about{
+  margin-bottom: 50px;
+}
+
+
+.copy {
+  width: 200px;
+  position: fixed;
+  bottom: 0;
+  left: 5em;
+}
+
+.foot {
+  font-family: 'Trebuchet MS';
+ 
+  
+}

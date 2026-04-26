@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+:root{
+    font-family: "Trebuchet Ms";
+}
+
+section{
+   background-color: rgb(42, 56, 67);
+   border-bottom: solid black ;
+   
+}
