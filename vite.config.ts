@@ -5,10 +5,10 @@ import babel from '@rolldown/plugin-babel'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/k4jarrr.page-hosting/',
   plugins: [
     react(),
     tailwindcss(),
     babel({ presets: [reactCompilerPreset()] })
   ],
+  base: '/k4jarrr.page-hosting/',
 })
