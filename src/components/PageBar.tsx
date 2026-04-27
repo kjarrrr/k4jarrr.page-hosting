@@ -34,8 +34,9 @@ export function PageBar() {
             <p>About</p>
           </NavLink>
           <a href="https://ko-fi.com/k4jarrr">
-            <p className="text-black hover:text-white transition-all">Donate</p>
+          <p className="text-black hover:text-white transition-all">Donate</p>
           </a>
+
         </div>
       </section>
     </>
