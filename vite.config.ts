@@ -10,5 +10,5 @@ export default defineConfig({
     tailwindcss(),
     babel({ presets: [reactCompilerPreset()] })
   ],
-  base: '/k4jarrr.page-hosting/',
+  base: '/',
 })
