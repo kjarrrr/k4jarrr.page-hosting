@@ -14,7 +14,7 @@ const SOCIAL_LINKS: SocialLink[] = [
   { href: 'https://x.com/k4jarrr', imgSrc: 'img/twitter.png',    imgClass: 'twitter',    label: 'twitter',    containerClass: 'twitterContainer',    pClass: 'twitter-p' },
   { href: 'https://k4jarrrr.newgrounds.com/', imgSrc: 'img/newgrounds.png', imgClass: 'newgrounds', label: 'newgrounds', containerClass: 'newgroundsContainer', pClass: 'newgrounds-p' },
   { href: 'https://ko-fi.com/k4jarrr', imgSrc: 'img/kofi.png',       imgClass: 'kofi',       label: 'ko-fi',      containerClass: 'kofiContainer',       pClass: 'kofi-p' },
-  {href: 'https://www.youtube.com/@k4jarrrr', imgSrc: 'img/youtube.png',       imgClass: 'youtube',       label: 'youtube',      containerClass: 'youtubeContainer',       pClass: 'youtube-p'},
+  {href: 'https://www.youtube.com/@k4jarrr', imgSrc: 'img/youtube.png',       imgClass: 'youtube',       label: 'youtube',      containerClass: 'youtubeContainer',       pClass: 'youtube-p'},
   {href: 'https://www.deviantart.com/artist-818', imgSrc: 'img/deviantart.png',       imgClass: 'deviantart',       label: 'deviantart',      containerClass: 'deviantContainer',       pClass: 'deviant-p'}
 ]
 

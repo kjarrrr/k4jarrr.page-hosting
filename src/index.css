@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body {
   background-color: rgb(60, 77, 87);
   zoom: 70%;
@@ -11,7 +16,7 @@ body {
 
 * {
   scrollbar-width: none;
-  -ms-overflow-style: none; 
+  -ms-overflow-style: none;
 }
 
 *::-webkit-scrollbar {
@@ -19,14 +24,14 @@ body {
 }
 
 
-@keyframes diagonal-move {
-  0%   { background-position: 100% 100%; }
-  100% { background-position: 0% 0%; }
-}
-
 @keyframes scaler {
-  from { transform: scale(0.2); }
-  to   { transform: scale(1); }
+  from {
+    transform: scale(0.2);
+  }
+
+  to {
+    transform: scale(1);
+  }
 }
 
 .songbox {
@@ -40,13 +45,15 @@ body {
   color: white;
 }
 
-.playing{
-   position: relative;
+.playing {
+  position: relative;
   top: -40px;
 }
 
 
-.by1, .by2, .by3 {
+.by1,
+.by2,
+.by3 {
   position: relative;
   top: -40px;
   color: rgb(211, 211, 211);
@@ -61,7 +68,8 @@ body {
   z-index: 1;
 }
 
-.mimimi, .mimimi2 {
+.mimimi,
+.mimimi2 {
   position: absolute;
   top: 10px;
   left: 20px;
@@ -69,8 +77,13 @@ body {
   height: 100%;
 }
 
-.mimimi2 { display: none; }
-.mimimiContainer:hover .mimimi2 { display: block; }
+.mimimi2 {
+  display: none;
+}
+
+.mimimiContainer:hover .mimimi2 {
+  display: block;
+}
 
 .gigaContainer {
   display: flex;
@@ -239,14 +252,20 @@ body {
   height: 50px;
 }
 
-.closer, .closer2 {
+.closer,
+.closer2 {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.closer2 { display: none; }
-.closerContainer:hover .closer2 { display: block; }
+.closer2 {
+  display: none;
+}
+
+.closerContainer:hover .closer2 {
+  display: block;
+}
 
 .blueheaderContainer {
   position: relative;
@@ -276,13 +295,15 @@ body {
   letter-spacing: 10px;
 }
 
-dialog { padding: 0; }
+dialog {
+  padding: 0;
+}
 
 dialog .allpoppie {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  
+
 }
 
 .tree {
@@ -337,11 +358,22 @@ dialog .allpoppie {
   gap: 50px;
 }
 
-.internalContainer    { width: 150px;  height: 100px; transition: transform ease 0.2s; color: black; }
+.internalContainer {
+  width: 150px;
+  height: 100px;
+  transition: transform ease 0.2s;
+  color: black;
+}
 
-.internalContainer:hover { transform: scale(1.1); }
+.internalContainer:hover {
+  transform: scale(1.1);
+}
 
-.internalIntention { width: 150px;  height: 180px; border: solid;}
+.internalIntention {
+  width: 150px;
+  height: 180px;
+  border: solid;
+}
 
 .internal-p {
   display: flex;
@@ -352,40 +384,222 @@ dialog .allpoppie {
   letter-spacing: 2px;
 }
 
-.internal-p { position: relative; left: 7px; }
+dialog.artworks {
+  position: fixed !important;
+  inset: 0 !important;
+  margin: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: none !important;
+  max-height: none !important;
+}
 
-.tumblrContainer    { width: 60px;  height: 90px; transition: transform ease 0.2s; color: black; }
-.twitterContainer   { width: 110px; height: 90px; transition: transform ease 0.2s; color: black; }
-.newgroundsContainer{ width: 110px; height: 90px; transition: transform ease 0.2s; color: black; }
-.kofiContainer      { width: 110px; height: 90px; transition: transform ease 0.2s; color: black; }
-.youtubeContainer   { width: 110px; height: 90px; transition: transform ease 0.2s; color: black; }
-.deviantContainer   { width: 110px; height: 90px; display: flex; flex-direction: column; 
-                      justify-content: center; align-items: center; transition: transform ease 0.2s; color: black; }
+.artworks {
+  padding: 0;
+  border: none;
+  width: 100vw;
+  height: 100vh;
+}
 
-.tumblrContainer:hover     { transform: scale(1.1); }
-.twitterContainer:hover    { transform: scale(1.1); }
-.newgroundsContainer:hover { transform: scale(1.1); }
-.kofiContainer:hover       { transform: scale(1.1); }
-.youtubeContainer:hover    { transform: scale(1.1); }
-.deviantContainer:hover    { transform: scale(1.1); }
 
-.tumblr    { width: 60px;  height: 90px; }
-.twitter   { width: 110px; height: 90px; }
-.newgrounds{ width: 100px; height: 90px; }
-.kofi      { width: 100px; height: 90px; }
-.youtube   { width: 105px; height: 80px; }
-.deviantart { width: 82px; height: 80px; margin-top: 13px;  }
+.imageMax {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 145%;
+  height: 145%;
+  background-color: rgba(25, 37, 44, 0.95);
+}
 
-.tumblr-p, .twitter-p, .newgrounds-p, .kofi-p, .youtube-p, .deviant-p {
+.imageMax img {
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: contain;
+}
+
+.artworksGrid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 100px;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  will-change: scroll-position;
+}
+
+.artworkItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.artworkItem:hover {
+  transform: scale(1.1);
+}
+
+.artworkItem img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.artworkItem img {
+  image-rendering: high-quality;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.frontpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 600px
+}
+
+.internal-p {
+  position: relative;
+  left: 7px;
+}
+
+.tumblrContainer {
+  width: 60px;
+  height: 90px;
+  transition: transform ease 0.2s;
+  color: black;
+}
+
+.twitterContainer {
+  width: 110px;
+  height: 90px;
+  transition: transform ease 0.2s;
+  color: black;
+}
+
+.newgroundsContainer {
+  width: 110px;
+  height: 90px;
+  transition: transform ease 0.2s;
+  color: black;
+}
+
+.kofiContainer {
+  width: 110px;
+  height: 90px;
+  transition: transform ease 0.2s;
+  color: black;
+}
+
+.youtubeContainer {
+  width: 110px;
+  height: 90px;
+  transition: transform ease 0.2s;
+  color: black;
+}
+
+.deviantContainer {
+  width: 110px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform ease 0.2s;
+  color: black;
+}
+
+.tumblrContainer:hover {
+  transform: scale(1.1);
+}
+
+.twitterContainer:hover {
+  transform: scale(1.1);
+}
+
+.newgroundsContainer:hover {
+  transform: scale(1.1);
+}
+
+.kofiContainer:hover {
+  transform: scale(1.1);
+}
+
+.youtubeContainer:hover {
+  transform: scale(1.1);
+}
+
+.deviantContainer:hover {
+  transform: scale(1.1);
+}
+
+.tumblr {
+  width: 60px;
+  height: 90px;
+}
+
+.twitter {
+  width: 110px;
+  height: 90px;
+}
+
+.newgrounds {
+  width: 100px;
+  height: 90px;
+}
+
+.kofi {
+  width: 100px;
+  height: 90px;
+}
+
+.youtube {
+  width: 105px;
+  height: 80px;
+}
+
+.deviantart {
+  width: 82px;
+  height: 80px;
+  margin-top: 13px;
+}
+
+.tumblr-p,
+.twitter-p,
+.newgrounds-p,
+.kofi-p,
+.youtube-p,
+.deviant-p {
   display: flex;
   justify-content: center;
   font-family: 'Trebuchet MS';
   letter-spacing: 2px;
 }
 
-.tumblr-p     { position: relative; left: 7px; }
-.newgrounds-p { position: relative; left: -5px; }
-.kofi-p       { position: relative; right: 10px; }
+.frontpage-p {
+  display: flex;
+  justify-content: center;
+  font-family: 'Trebuchet MS';
+  letter-spacing: 2px;
+}
+
+.tumblr-p {
+  position: relative;
+  left: 7px;
+}
+
+.newgrounds-p {
+  position: relative;
+  left: -5px;
+}
+
+.kofi-p {
+  position: relative;
+  right: 10px;
+}
 
 
 dialog .allpoppie2 {
@@ -421,14 +635,20 @@ dialog .allpoppie2 {
   cursor: pointer;
 }
 
-.closer3, .closer4 {
+.closer3,
+.closer4 {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.closer4 { display: none; }
-.closerContainer2:hover .closer4 { display: block; }
+.closer4 {
+  display: none;
+}
+
+.closerContainer2:hover .closer4 {
+  display: block;
+}
 
 .textWork {
   position: relative;
@@ -458,24 +678,43 @@ dialog .allpoppie2 {
   border-left: none;
 }
 
-.squarefied{
+.squarefied {
   display: flex;
   flex-direction: column;
   padding: 50px;
   width: 1200px;
-  height: 50rem;
+  height: 95rem;
   border: solid rgb(16, 21, 23);
   background-color: rgb(25, 37, 44);
   position: relative;
   top: 50px;
   right: -65vh;
   margin: 0;
+  margin-bottom: 100px;
   font-family: 'Trebuchet MS';
   font-size: 25px;
   color: white;
 }
 
-.about{
+.squarefied2{
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  width: 1200px;
+  height: 120rem;
+  border: solid rgb(16, 21, 23);
+  background-color: rgb(25, 37, 44);
+  position: relative;
+  top: 50px;
+  right: -55vh;
+  margin: 0;
+  margin-bottom: 100px;
+  font-family: 'Trebuchet MS';
+  font-size: 25px;
+  color: white;
+}
+
+.about {
   margin-bottom: 50px;
 }
 
@@ -489,6 +728,6 @@ dialog .allpoppie2 {
 
 .foot {
   font-family: 'Trebuchet MS';
- 
-  
+
+
 }

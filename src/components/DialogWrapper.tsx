@@ -8,26 +8,24 @@ interface Props {
   children: React.ReactNode
 }
 
-export default function DialogWrapper({ isOpen, onClose, className, innerClassName, children }: Props) {
-  const dialogRef = useRef<HTMLDialogElement>(null)
-
-  useEffect(() => {
-    const dialog = dialogRef.current
-    if (!dialog) return
-    if (isOpen) dialog.showModal()
-    else dialog.close()
-  }, [isOpen])
-
-  const handleBackdropClick = (e: React.MouseEvent<HTMLDialogElement>) => {
-    const inner = (e.currentTarget as HTMLElement).querySelector(`.${innerClassName}`)
-    if (inner && !inner.contains(e.target as Node)) {
-      onClose()
-    }
-  }
+export default function DialogWrapper({ isOpen, onClose, className, children }: Props) {
+  if (!isOpen) return null
 
   return (
-    <dialog ref={dialogRef} className={className} onClick={handleBackdropClick}>
-      {children}
-    </dialog>
+    <div
+      onClick={(e) => {
+        if (e.target === e.currentTarget) onClose()
+      }}
+      style={{
+        position: 'fixed',
+        inset: 0,
+        zIndex: 9999,
+        backgroundColor: 'rgba(0, 0, 0, 0.7)',
+      }}
+    >
+      <div className={className}>
+        {children}
+      </div>
+    </div>
   )
 }

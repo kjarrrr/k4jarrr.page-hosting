@@ -1,4 +1,4 @@
-import { useAudioSequence } from '../hooks/useAudioSequence'
+{/*import { useAudioSequence } from '../hooks/useAudioSequence'
 
 export default function Header() {
   const { TRACKS, setRef, nowPlaying, playSequence } = useAudioSequence()
@@ -24,4 +24,4 @@ export default function Header() {
       </div>
     </div>
   )
-}
+}*/}

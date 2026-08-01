@@ -11,7 +11,10 @@ export function PageBar() {
           <img className="w-60 h-14" src={logo} alt="" />
         </Link>
 
-        <div className="flex gap-5">
+        
+
+
+        <div className="flex gap-5 text-2xl">
           <NavLink
             to={"/"}
             className={({ isActive }) =>
@@ -25,6 +28,15 @@ export function PageBar() {
             </div>
           </NavLink>
 
+          <NavLink to={"/Artpage"}
+            className={({ isActive }) =>
+              isActive
+                ? "text-white border-white"
+                : "text-black hover:text-white transition-all"
+            }>
+            <p>Projects</p>
+          </NavLink>
+
           <NavLink to={"/About"}
             className={({ isActive }) =>
               isActive
@@ -36,7 +48,7 @@ export function PageBar() {
           <a href="https://ko-fi.com/k4jarrr">
           <p className="text-black hover:text-white transition-all">Donate</p>
           </a>
-
+            
         </div>
       </section>
     </>

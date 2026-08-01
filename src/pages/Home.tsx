@@ -3,7 +3,7 @@ import LinksWindow from '../components/LinksWindow'
 import WorkWindow from '../components/WorkWindow'
 import LinksDialog from '../components/LinksDialog'
 import WorkDialog from '../components/WorkDialog'
-import Footer from '../components/Footer'
+
 import { useDialog } from '../hooks/useDialog'
 
 export function Home() {
@@ -20,7 +20,6 @@ export function Home() {
         <WorkWindow onOpen={work.open} />
         <LinksDialog isOpen={links.isOpen} onClose={links.close} />
         <WorkDialog isOpen={work.isOpen} onClose={work.close} />
-        <Footer />
       </div>
     </>
   );
