@@ -115,9 +115,6 @@ body {
   color: white;
 }
 
-
-
-
 .link {
   width: 40px;
   height: 16px;
@@ -441,7 +438,6 @@ dialog.artworks {
 }
 
 .artworkItem img {
-  width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
 }
@@ -458,7 +454,7 @@ dialog.artworks {
   justify-content: center;
   align-items: center;
   width: 450px;
-  height: 600px
+  height: 600px;
 }
 
 .internal-p {
@@ -730,4 +726,247 @@ dialog .allpoppie2 {
   font-family: 'Trebuchet MS';
 
 
+}
+
+@media (max-width: 1024px) {
+  body {
+    zoom: 1;
+  }
+
+  .songbox {
+    position: static;
+    margin: 10px auto;
+    align-items: center;
+  }
+
+  .mimimiContainer {
+    top: 10px;
+    left: 10px;
+  }
+
+  .gigaContainer {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .main {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .square {
+    position: static;
+    width: 92vw;
+    max-width: 600px;
+    height: auto;
+    min-height: 400px;
+    padding: 20px;
+    font-size: 18px;
+    margin: 0 auto 20px;
+  }
+
+  .square3,
+  .square8 {
+    position: static;
+    width: 92vw;
+    max-width: 350px;
+    margin: 20px auto;
+    box-shadow: 10px 10px black;
+  }
+
+  .square7,
+  .square10 {
+    position: relative;
+    width: 100%;
+  }
+
+  .button1{ 
+    position: static;
+    display: block;
+    margin: 15px auto 0;
+    left: auto;
+    bottom: auto;
+    top: auto;
+  }
+
+  .button2{
+    display: block;
+    margin: 15px auto 0;
+    left: auto;
+    bottom: 50px;
+    top: auto;
+  }
+
+  .link,
+  .work {
+    position: relative;
+    right: auto;
+    margin: 0 auto;
+  }
+
+  .linked {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+    height: 100px;
+  }
+  .gallery {
+    position: relative;
+    right: auto;
+    bottom: 30px;
+    display: block;
+    margin: 10px auto;
+    width: 150px;
+    height: 150px;
+  }
+
+  .blueheaderContainer,
+  .blueheaderContainer2 {
+    position: relative;
+  }
+
+  .square12,
+  .square13 {
+    position: relative;
+    width: 92vw;
+    max-width: 800px;
+    height: auto;
+    padding: 15px 0;
+    margin: 0 auto;
+    
+  }
+
+  .textlinks,
+  .textWork {
+    position: relative;
+    font-size: 26px;
+    letter-spacing: 4px;
+    margin-left: 15px;
+    top: 10px;
+  }
+
+  .tree,
+  .tripper {
+    position: fixed;
+    inset: 5vh 5vw auto 5vw;
+    left: auto;
+    top: 5vh;
+    width: 90vw;
+    height: 85vh;
+    max-height: 85vh;
+    overflow-y: auto;
+  }
+
+  .iconsContainer,
+  .worksContainer {
+    display: flex;
+    position: static;
+    width: 90vw;
+    margin-left: 0;
+    justify-content: center;
+    gap: 45px;
+    
+  }
+
+  .squarefied,
+  .squarefied2 {
+    position: static;
+    width: 92vw;
+    max-width: 700px;
+    height: auto;
+    padding: 25px;
+    margin: 20px auto;
+  }
+
+  .artworksGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 15px;
+  }
+
+  .artworkItem img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  .frontpage {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    aspect-ratio: 3 / 4;
+  }
+
+  .copy {
+    position: static;
+    width: auto;
+    text-align: center;
+    margin: 20px auto;
+    left: auto;
+    bottom: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .square {
+    width: 95vw;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .square3,
+  .square8 {
+    width: 95vw;
+    max-width: 320px;
+  }
+
+  .square12,
+  .square13 {
+    width: 95vw;
+  }
+
+  .textlinks,
+  .textWork {
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    bottom: 20px;
+  }
+
+  .iconsContainer,
+  .worksContainer {
+    position: relative;
+    width: 95vw;
+    gap: 45px;
+    flex-wrap: wrap;
+  }
+
+  .squarefied,
+  .squarefied2 {
+    width: 95vw;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .artworksGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .frontpage {
+    max-width: 220px;
+  }
+
+  .copy {
+    width: 100%;
+    font-size: 14px;
+  }
 }

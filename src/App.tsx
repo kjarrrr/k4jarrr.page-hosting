@@ -22,7 +22,6 @@ function App() {
         <Route path='/Inkblue' element={<InkBlue />} />
       </Routes>
       <Footer />
-
     </>
   )
 }

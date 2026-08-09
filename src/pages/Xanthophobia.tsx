@@ -4,16 +4,16 @@ export function Xanthophobia() {
 
     return (
         <>
-            <NavLink to={"/Artpage"} className='absolute top-50 left-20'>
+            <NavLink to={"/Artpage"} className='block md:absolute mx-4 mt-4 md:mx-0 md:mt-0 md:top-50 md:left-20 w-fit'>
                 <div>
-                    <p className='text-5xl'><IoArrowBackCircleOutline /> Back</p>
+                    <p className='text-2xl md:text-5xl'><IoArrowBackCircleOutline /> Back</p>
                 </div>
             </NavLink>
             <div className="squarefied2">
-                <p className="text-7xl">My thoughts on YSX</p>
+                <p className="text-3xl md:text-7xl">My thoughts on YSX</p>
                 <br />
                 <br />
-                <p className="text-5xl">Trying to poorly explain the initial journey</p>
+                <p className="text-2xl md:text-5xl">Trying to poorly explain the initial journey</p>
                 <br />
                 <p>
                     As a short introduction, YSX is an art project that translates into a webcomic story, integrating characters and a plot to advance the narrative.

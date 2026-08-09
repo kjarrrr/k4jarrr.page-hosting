@@ -5,16 +5,13 @@ export function PageBar() {
 
   return (
     <>
-      <section className="flex justify-around items-center h-30">
-        
-        <Link className="-mx-40" to={"/"}>
-          <img className="w-60 h-14" src={logo} alt="" />
+      <section className="flex flex-wrap items-center justify-center md:justify-around h-auto md:h-30 py-4 md:py-0 px-4 gap-4">
+
+        <Link className="md:-mx-40" to={"/"}>
+          <img className="w-40 h-10 md:w-60 md:h-14" src={logo} alt="" />
         </Link>
 
-        
-
-
-        <div className="flex gap-5 text-2xl">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-5 text-base md:text-2xl">
           <NavLink
             to={"/"}
             className={({ isActive }) =>
@@ -45,13 +42,12 @@ export function PageBar() {
             }>
             <p>About</p>
           </NavLink>
+
           <a href="https://ko-fi.com/k4jarrr">
-          <p className="text-black hover:text-white transition-all">Donate</p>
+            <p className="text-black hover:text-white transition-all">Donate</p>
           </a>
-            
         </div>
       </section>
     </>
   )
 }
-

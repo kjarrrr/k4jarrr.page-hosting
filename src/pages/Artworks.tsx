@@ -50,11 +50,12 @@ function MaxImage({ isOpen, onClose, imgSrcfull, label }: {
           position: 'fixed',
           top: '50%',
           left: '50%',
-          transform: 'translate(-55%, -60%)',
+          transform: 'translate(-50%, -50%)',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          maxHeight: '90vh',
+          width: '90vw',
+          maxHeight: '85vh',
           zIndex: 1000
         }}
       >
@@ -63,13 +64,13 @@ function MaxImage({ isOpen, onClose, imgSrcfull, label }: {
           alt={label}
           style={{
             maxWidth: '100%',
-            maxHeight: '100vh',
+            maxHeight: '85vh',
             objectFit: 'contain'
           }}
         />
 
       </div>
-      <p className='absolute bottom-0 left-0 right-0 bg-black text-white text-3xl p-2 font-bold text-center'>{label}</p>
+      <p className='absolute bottom-0 left-0 right-0 bg-black text-white text-base md:text-3xl p-2 font-bold text-center'>{label}</p>
     </DialogWrapper>
 
   )
@@ -81,12 +82,12 @@ export function Artworks() {
   return (
     <>
       <header>
-        <h1 className='text-5xl my-5 text-center text-amber-400 '>YELLOW SPACE XANTHOPHOBIA <br />
+        <h1 className='text-2xl md:text-5xl my-5 text-center text-amber-400 px-4'>YELLOW SPACE XANTHOPHOBIA <br />
           Art Dump</h1>
       </header>
-      <NavLink to={"/Artpage"} className='absolute top-50 left-20'>
+      <NavLink to={"/Artpage"} className='block md:absolute mx-4 mb-4 md:mx-0 md:mb-0 md:top-50 md:left-20 w-fit'>
         <div>
-          <p className='text-5xl'><IoArrowBackCircleOutline /> Back</p>
+          <p className='text-2xl md:text-5xl'><IoArrowBackCircleOutline /> Back</p>
         </div>
       </NavLink>
       <div className="artworksGrid">

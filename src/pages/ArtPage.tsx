@@ -10,7 +10,7 @@ export function ArtPage() {
                 <h1 className='welcome'>WELCOME TO THE MAIN PROJECTS</h1>
             </header>
 
-            <div className="flex items-center justify-center gap-20 mt-20" style={{ fontFamily: 'Trebuchet MS' }}>
+            <div className="flex flex-wrap items-center justify-center gap-10 md:gap-20 mt-10 md:mt-20 px-4" style={{ fontFamily: 'Trebuchet MS' }}>
 
                 <div className="flex flex-col gap-10 bg-[rgba(25,37,44,0.85)] p-10 border border-[rgb(16,21,23)]">
 
