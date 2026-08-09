@@ -8,7 +8,6 @@ export function About() {
           This is a website where i promote my webcomics projects, art and social-media. <br />
           The page will continue to be updated as things develop, with more information 
           about the projects, stay tuned for updates on the homepage or my social media.
-          The page now adapts to mobile and tablet too.
 
           <br />
           <br />
