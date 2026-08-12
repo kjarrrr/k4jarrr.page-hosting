@@ -60,7 +60,7 @@ export function ArtPage() {
                             <img className="w-20 h-15" src="img/news.png" alt="" />
                             </a>
 
-                            <a href="https://www.tiktok.com/@k4jarrr">
+                            <a href="https://www.tiktok.com/@yellow_space_channel">
                             <FaTiktok className="text-6xl" />
                             </a>
                         </div>
