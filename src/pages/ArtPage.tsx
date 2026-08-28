@@ -23,12 +23,16 @@ export function ArtPage() {
                             forcing them to make decisions and move forward into infinity
                             to discover what is happening.
                         </p>
-                         
+
                     </div>
-                   <div>
-                    <p className="text-amber-400 text-2xl"><span className="text-black text-2xl">Status:</span> In process</p>
-                   </div>
-                     <NavLink
+                    <div>
+                        <p className="text-amber-400 text-2xl"><span className="text-black text-2xl">Status:</span> In process</p>
+                    </div>
+
+                    <a className="text-3xl font-bold text-amber-300 hover:underline" style={{ fontFamily: 'Trebuchet MS' }} href="">
+                        Read Here :D
+                    </a>
+                    <NavLink
                         to={"/Artworks"}
                         className={({ isActive }) =>
                             isActive ? "text-black" : "text-amber-300 hover:text-white transition-all"
@@ -37,7 +41,7 @@ export function ArtPage() {
                         <p className="text-3xl hover:underline" style={{ fontFamily: 'Trebuchet MS' }}>
                             Art Gallery →
                         </p>
-                    </NavLink> 
+                    </NavLink>
 
                     <NavLink
                         to={"/Xanthophobia"}
@@ -48,20 +52,20 @@ export function ArtPage() {
                         <p className="text-3xl hover:underline" style={{ fontFamily: 'Trebuchet MS' }}>
                             Blog →
                         </p>
-                    </NavLink> 
+                    </NavLink>
                     <p className="text-3xl text-white">
                         FIND MORE MEDIA:
                         <div className="flex flex-row gap-5">
                             <a href="https://www.youtube.com/@TheYellowSpaceChannel">
-                            <IoLogoYoutube className="text-6xl" />
+                                <IoLogoYoutube className="text-6xl" />
                             </a>
 
                             <a href="https://k4jarrrr.newgrounds.com/">
-                            <img className="w-20 h-15" src="img/news.png" alt="" />
+                                <img className="w-20 h-15" src="img/news.png" alt="" />
                             </a>
 
                             <a href="https://www.tiktok.com/@yellow_space_channel">
-                            <FaTiktok className="text-6xl" />
+                                <FaTiktok className="text-6xl" />
                             </a>
                         </div>
                     </p>
