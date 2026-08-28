@@ -15,10 +15,11 @@ export default function MainContent() {
           <br />
           <br />
           <NavLink to={"/Artpage"}>
-            <img src="img/vinegar.png" className="max-w-140 " alt="" />
+            <img src="img/vinegar.png" className="max-w-[300px] sm:max-w-[280px] md:max-w-140" alt="" />
           </NavLink>
-          <p style={{ padding: '20px', textAlign: 'center' }}><br />
-            <span className="text-3xl">Website Updates: 11/08/26</span><br />
+          <p style={{ padding: '20px', textAlign: 'center' }} className="text-sm md:text-base">
+            <br />
+            <span className="text-xl md:text-3xl">Website Updates: 11/08/26</span><br />
             -YSX Chapter one published on GlobalComix
             <br />
             -Mobile devices update
