@@ -29,7 +29,7 @@ export function ArtPage() {
                         <p className="text-amber-400 text-2xl"><span className="text-black text-2xl">Status:</span> In process</p>
                     </div>
 
-                    <a className="text-3xl font-bold text-amber-300 hover:underline" style={{ fontFamily: 'Trebuchet MS' }} href="">
+                    <a className="text-3xl font-bold text-amber-300 hover:underline" style={{ fontFamily: 'Trebuchet MS' }} href="https://globalcomix.com/c/yellow-space-xanthophobia">
                         Read Here :D
                     </a>
                     <NavLink
