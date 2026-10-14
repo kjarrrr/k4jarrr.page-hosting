@@ -54,7 +54,7 @@ export function ArtPage() {
                         </p>
                     </NavLink>
                     <p className="text-3xl text-white">
-                        FIND MORE MEDIA:
+                        ANIMATIONS:
                         <div className="flex flex-row gap-5">
                             <a href="https://www.youtube.com/@TheYellowSpaceChannel">
                                 <IoLogoYoutube className="text-6xl" />
