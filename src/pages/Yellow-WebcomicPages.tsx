@@ -1,4 +1,4 @@
-export function InkBlue() {
+export function Yelloware() {
 
     return (
         <>

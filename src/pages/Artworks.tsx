@@ -56,7 +56,8 @@ function MaxImage({ isOpen, onClose, imgSrcfull, label }: {
           alignItems: 'center',
           width: '90vw',
           maxHeight: '85vh',
-          zIndex: 1000
+          zIndex: 1000,
+          pointerEvents: 'none' // <-- Hace que el cuadro transparente deje pasar los clics al fondo
         }}
       >
         <img
@@ -65,14 +66,18 @@ function MaxImage({ isOpen, onClose, imgSrcfull, label }: {
           style={{
             maxWidth: '100%',
             maxHeight: '85vh',
-            objectFit: 'contain'
+            objectFit: 'contain',
+            pointerEvents: 'auto' // <-- Mantiene la imagen interactiva para que NO cierre al tocarla
           }}
         />
-
       </div>
-      <p className='absolute bottom-0 left-0 right-0 bg-black text-white text-base md:text-3xl p-2 font-bold text-center'>{label}</p>
+      <p
+        onClick={(e) => e.stopPropagation()} // <-- Evita que el texto inferior cierre el modal si lo tocan
+        className='absolute bottom-0 left-0 right-0 bg-black text-white text-base md:text-3xl p-2 font-bold text-center'
+      >
+        {label}
+      </p>
     </DialogWrapper>
-
   )
 }
 

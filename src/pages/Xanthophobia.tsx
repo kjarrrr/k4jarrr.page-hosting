@@ -16,11 +16,9 @@ export function Xanthophobia() {
                 <p className="text-2xl md:text-5xl">Trying to poorly explain the initial journey</p>
                 <br />
                 <p>
-                    As a short introduction, YSX is an art project that translates into a webcomic story, integrating characters and a plot to advance the narrative.
+                    YSX is an experimental art project that translates into a webcomic story, integrating characters and a plot to advance the narrative, (and nonsense videos lol).
 
-                    I've grown quite fond of it for several reasons, although, like any artist, it's passion that drives me to continue with this individual work and expand my creative horizons by exploring the ideas that cross my mind.
-
-                    I started this project around 2024 with very strange animations on TikTok, using audio/songs I found online. Before that, I made other types of videos to showcase unusual drawings to attract attention. Seeing the views, 
+                    I've started this project around 2024 with very strange animations on TikTok, using audio/songs I found online. Before that, I made other types of videos to showcase unusual drawings to attract attention. Seeing the views, 
                     I decided to improve the animation quality, eventually randomly designing the red-eyed guy. The first video featuring the yellow background is from July 28, 2024. 
                     It's currently private because (like most of the videos on the account) they're a bit awkward for me, embarrassing and difficult to watch due to their randomness. 
                     Anyway, at the time I enjoyed making them, and they got decent views. This motivated me to create more and more, reaching larger numbers and high view counts on some videos.

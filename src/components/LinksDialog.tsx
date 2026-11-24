@@ -10,12 +10,12 @@ interface SocialLink {
 }
 
 const SOCIAL_LINKS: SocialLink[] = [
-  { href: 'https://www.tumblr.com/artist-818', imgSrc: 'img/tumblr.png',     imgClass: 'tumblr',     label: 'tumblr',     containerClass: 'tumblrContainer',     pClass: 'tumblr-p' },
-  { href: 'https://x.com/k4jarrr', imgSrc: 'img/twitter.png',    imgClass: 'twitter',    label: 'twitter',    containerClass: 'twitterContainer',    pClass: 'twitter-p' },
+  { href: 'https://www.tumblr.com/artist-818', imgSrc: 'img/tumblr.png', imgClass: 'tumblr', label: 'tumblr', containerClass: 'tumblrContainer', pClass: 'tumblr-p' },
+  { href: 'https://x.com/k4jarrr', imgSrc: 'img/twitter.png', imgClass: 'twitter', label: 'twitter', containerClass: 'twitterContainer', pClass: 'twitter-p' },
   { href: 'https://k4jarrrr.newgrounds.com/', imgSrc: 'img/newgrounds.png', imgClass: 'newgrounds', label: 'newgrounds', containerClass: 'newgroundsContainer', pClass: 'newgrounds-p' },
-  { href: 'https://ko-fi.com/k4jarrr', imgSrc: 'img/kofi.png',       imgClass: 'kofi',       label: 'ko-fi',      containerClass: 'kofiContainer',       pClass: 'kofi-p' },
-  {href: 'https://www.youtube.com/@k4jarrr', imgSrc: 'img/youtube.png',       imgClass: 'youtube',       label: 'youtube',      containerClass: 'youtubeContainer',       pClass: 'youtube-p'},
-  {href: 'https://www.deviantart.com/artist-818', imgSrc: 'img/deviantart.png',       imgClass: 'deviantart',       label: 'deviantart',      containerClass: 'deviantContainer',       pClass: 'deviant-p'}
+  { href: 'https://ko-fi.com/k4jarrr', imgSrc: 'img/kofi.png', imgClass: 'kofi', label: 'ko-fi', containerClass: 'kofiContainer', pClass: 'kofi-p' },
+  { href: 'https://www.youtube.com/@k4jarrr', imgSrc: 'img/youtube.png', imgClass: 'youtube', label: 'youtube', containerClass: 'youtubeContainer', pClass: 'youtube-p' },
+  { href: 'https://www.deviantart.com/artist-818', imgSrc: 'img/deviantart.png', imgClass: 'deviantart', label: 'deviantart', containerClass: 'deviantContainer', pClass: 'deviant-p' }
 ]
 
 interface Props {
@@ -30,7 +30,7 @@ export default function LinksDialog({ isOpen, onClose }: Props) {
 
         <div className="buttoncancelContainer">
           <div className="closerContainer" onClick={onClose}>
-            <img className="closer"  src="img/close.png"  width="50" height="50" alt="close" />
+            <img className="closer" src="img/close.png" width="50" height="50" alt="close" />
             <img className="closer2" src="img/close2.png" width="50" height="50" alt="close hover" />
           </div>
         </div>
@@ -43,7 +43,8 @@ export default function LinksDialog({ isOpen, onClose }: Props) {
 
         <div className="iconsContainer">
           {SOCIAL_LINKS.map(link => (
-            <a key={link.label} style={{ textDecoration: 'none' }} href={link.href}>
+            <a key={link.label} style={{ textDecoration: 'none' }} href={link.href} target="_blank"
+              rel="noopener noreferrer">
               <div className={link.containerClass}>
                 <img className={link.imgClass} src={link.imgSrc} alt={link.label} />
                 <div className={link.pClass}>

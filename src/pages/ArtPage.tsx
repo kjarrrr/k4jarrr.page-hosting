@@ -7,7 +7,7 @@ export function ArtPage() {
     return (
         <>
             <header>
-                <h1 className='welcome'>WELCOME TO THE MAIN PROJECTS</h1>
+                <h1 className='welcome'>YELLOW SPACE XANTHOPHOBIA</h1>
             </header>
 
             <div className="flex flex-wrap items-center justify-center gap-10 md:gap-20 mt-10 md:mt-20 px-4" style={{ fontFamily: 'Trebuchet MS' }}>
@@ -29,9 +29,20 @@ export function ArtPage() {
                         <p className="text-amber-400 text-2xl"><span className="text-black text-2xl">Status:</span> In process</p>
                     </div>
 
-                    <a className="text-3xl font-bold text-amber-300 hover:underline" style={{ fontFamily: 'Trebuchet MS' }} href="https://globalcomix.com/c/yellow-space-xanthophobia">
-                        Read Here :D
+                    <a
+                        href="https://globalcomix.com/c/yellow-space-xanthophobia"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block text-amber-300 hover:text-white transition-all"
+                    >
+                        <p
+                            className="text-3xl hover:underline font-bold"
+                            style={{ fontFamily: "Trebuchet MS" }}
+                        >
+                            Read Here :D
+                        </p>
                     </a>
+
                     <NavLink
                         to={"/Artworks"}
                         className={({ isActive }) =>
@@ -39,7 +50,7 @@ export function ArtPage() {
                         }
                     >
                         <p className="text-3xl hover:underline" style={{ fontFamily: 'Trebuchet MS' }}>
-                            Art Gallery →
+                            Low Effort Gallery →
                         </p>
                     </NavLink>
 
@@ -56,15 +67,21 @@ export function ArtPage() {
                     <p className="text-3xl text-white">
                         ANIMATIONS:
                         <div className="flex flex-row gap-5">
-                            <a href="https://www.youtube.com/@TheYellowSpaceChannel">
+                            <a href="https://www.youtube.com/@TheYellowSpaceChannel"
+                                target="_blank"
+                                rel="noopener noreferrer">
                                 <IoLogoYoutube className="text-6xl" />
                             </a>
 
-                            <a href="https://k4jarrrr.newgrounds.com/">
+                            <a href="https://k4jarrrr.newgrounds.com/"
+                                target="_blank"
+                                rel="noopener noreferrer">
                                 <img className="w-20 h-15" src="img/news.png" alt="" />
                             </a>
 
-                            <a href="https://www.tiktok.com/@yellow_space_channel">
+                            <a href="https://www.tiktok.com/@yellow_space_channel"
+                                target="_blank"
+                                rel="noopener noreferrer">
                                 <FaTiktok className="text-6xl" />
                             </a>
                         </div>

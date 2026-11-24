@@ -5,7 +5,7 @@ import './index.css'
 import './App.css'
 import './galleryProjects.css'
 import './scrollbar-horizontal.css'
-
+import './projects.css'
 import App from './App.tsx'
 
 

@@ -5,13 +5,13 @@ export function PageBar() {
 
   return (
     <>
-      <section className="flex flex-wrap items-center justify-center md:justify-around h-auto md:h-30 py-4 md:py-0 px-4 gap-4">
+      <section className="fixed top-0 left-0 w-full z-50 flex flex-wrap items-center justify-center md:justify-around h-auto md:h-30 py-4 md:py-0 px-4 gap-4">
 
         <Link className="md:-mx-40" to={"/"}>
           <img className="w-40 h-10 md:w-60 md:h-14" src={logo} alt="" />
         </Link>
 
-        <div className="flex flex-wrap justify-center gap-4 md:gap-5 text-base md:text-2xl">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-5 text-base md:text-3xl">
           <NavLink
             to={"/"}
             className={({ isActive }) =>
@@ -25,14 +25,6 @@ export function PageBar() {
             </div>
           </NavLink>
 
-          <NavLink to={"/Artpage"}
-            className={({ isActive }) =>
-              isActive
-                ? "text-white border-white"
-                : "text-black hover:text-white transition-all"
-            }>
-            <p>Projects</p>
-          </NavLink>
 
           <NavLink to={"/About"}
             className={({ isActive }) =>
@@ -43,7 +35,20 @@ export function PageBar() {
             <p>About</p>
           </NavLink>
 
-          <a href="https://ko-fi.com/k4jarrr">
+          <NavLink to={"/ProjectOpt"}
+            className={({ isActive }) =>
+              isActive
+                ? "text-white border-white"
+                : "text-black hover:text-white transition-all"
+            }>
+            <p>Projects</p>
+          </NavLink>
+
+
+
+          <a href="https://ko-fi.com/k4jarrr"
+            target="_blank"
+            rel="noopener noreferrer">
             <p className="text-black hover:text-white transition-all">Donate</p>
           </a>
         </div>
