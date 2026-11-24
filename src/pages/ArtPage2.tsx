@@ -1,9 +1,8 @@
-import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
 
 export function ArtPage2() {
-    const [isActive, setIsActive] = useState(false);
+    const [isActive] = useState(false);
     return (
         <>
             <header>
